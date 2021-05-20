@@ -2,8 +2,8 @@
     <div class="row justify-content-end">
         <div class="col-md-1">
             Server:
-            <span class="text-success">Online</span>
-            <span class="text-danger">Offline</span>
+            <span *ngIf="wsStatus" class="text-success">Online</span>
+            <span *ngIf="!wsStatus" class="text-danger">Offline</span>
         </div>
     </div>
 </footer>
